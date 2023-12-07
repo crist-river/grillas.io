@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(214, 214, 214);
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar navbar"
+    "asidebar main main"
+    "footer footer footer";
+    gap: 20px;
+    grid-template-columns: 9em;
+}
+
+.navbar{
+    grid-area: navbar;
+    text-align: center;
+    background-color: blue;
+    color: azure;
+    padding: 1em;
+    font-size: 1em;
+}
+
+.asidebar{
+    grid-area: asidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    padding: 2em;
+}
+
+
+ul > li{
+    list-style: none;
+    padding: 10px;
+}
+
+.main{
+    grid-area: main;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    background-color: rgb(222, 222, 240);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.card a{
+    text-decoration: none;
+    background-color: blue;
+    color: rgb(194, 181, 181);
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(228, 239, 247);
+}
